@@ -75,7 +75,7 @@ rm gituse.txt   删除文件，删除文件后有两个选择，第一，提交commit
 
  第一步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果有的话，直接跳过此如下命令，如果没有的话，打开命令行，输入如下命令： 
 
-ssh-keygen  -t rsa –C “youremail@example.com”, 
+ssh-keygen  -t rsa –C “youremail@example.com”, (连续输入三个回车即可)
 id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
 
 
@@ -93,7 +93,7 @@ id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
 
 现在，我们根据GitHub的提示，在本地的testgit仓库下运行命令： 
 
-git remote add origin https://github.com/tugenhua0707/testgit.git（换成自己的地址） 
+git remote add origin https://github.com/tugenhua0707/testgit.git（换成自己的地址）（不行的话，再init一下本地的仓库） 
 
 
 把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。 
